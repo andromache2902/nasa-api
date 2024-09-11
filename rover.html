@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>APOD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">APOD</a></li>
+                <li><a href="rover.html">Rover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="rover">
+            <h1 id="rover-name">Curiosity</h1>
+            <p id="rover-info"></p>
+            <img id="rover-image" src="">
+            <div class="button-container">
+                <button id="previous-button" class="prevent-text-select">Previous</button>
+                <input type="number" id="photo-input" value="1" min="1" max="${photoCount}">
+                <!-- <p id="photo-number">1</p> -->
+                <button id="next-button" class="prevent-text-select">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="rover.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+body {
+    background-color: #212121;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+.prevent-text-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+/* Add some basic styling to the header */
+header {
+    justify-content: center;
+    max-width: 70%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    /* justify-content: space-between;  */
+}
+
+nav li {
+    float: left;
+    margin-right: 20px; 
+}
+
+nav a {
+    color: #fff; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ccc; 
+}
+
+.container {
+    /* display: flex; */
+    /* flex-direction: row; */
+    justify-content: center;
+    max-width: 70%;
+    margin: 40px auto;
+    padding: 20px;
+
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* APOD */
+
+h1#apod-title {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.image-column img#apod-image {
+    width: 100%;
+    margin: 20px auto;
+    display: block;
+}
+
+.info-column p#apod-info {
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+    margin: 20px;
+}
+
+/* Rover */
+
+h1#rover-name {
+    color: #fff;
+    font-size: 26px;
+    text-align: justify;
+    margin: 20px;
+}
+
+p#rover-info {
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+    margin: 20px;
+}
+
+img#rover-image {
+    width: 100%;
+    margin: 20px auto;
+    display: block;
+}
+
+#previous-button, #next-button {
+    background-color: #6b6b6b; 
+    color: #ffffff; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#previous-button:hover, #next-button:hover {
+    background-color: #717171;
+}
+
+.button-container {
+    text-align: right;
+}
+
+.button-container button {
+    margin-left: 0px;
+}
+
+.button-container p {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#photo-input {
+    width: 30px;
+    height: 30px;
+    padding: 5px; 
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #dddddd; /* Add a light gray border */
+    border-radius: 5px; /* Add a slight rounded corner effect */
+}
+
+#photo-input::-webkit-outer-spin-button,
+#photo-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* #photo-input[type="number"] {
+  -moz-appearance: textfield;
+} */
+
+/* #photo-number {
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-align: center;
+} */
