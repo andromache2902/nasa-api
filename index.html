@@ -8,8 +8,17 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">APOD</a></li>
-                <li><a href="rover.html">Rover</a></li>
+                <li><a id="apod-link" href="index.html">APOD</a></li>
+                <li>
+                    <div class="rover-dropdown">
+                        <a id="rover-link" href="rover.html">Rover</a>
+                        <ul class="dropdown-content">
+                            <li><a href="rover.html" data-rover="curiosity">Curiosity</a></li>
+                            <li><a href="rover.html" data-rover="opportunity">Opportunity</a></li>
+                            <li><a href="rover.html" data-rover="spirit">Spirit</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>

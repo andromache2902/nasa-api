@@ -18,8 +18,8 @@ header {
     padding: 20px;
     background-color: #333;
     color: #fff;
-    padding: 1em;
-    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px
 }
 
 nav ul {
@@ -45,15 +45,58 @@ nav a:hover {
     color: #ccc; 
 }
 
+/* Style the dropdown menu */
+
+#rover-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #292929;
+    border-radius: 5px;
+    padding: 10px 0px;
+    display: none;
+    width: 170px;
+}
+  
+.dropdown-content li {
+    list-style: none;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+}
+  
+.dropdown-content li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 16px;
+    display: block;
+}
+  
+.dropdown-content li a:hover {
+    color: #ccc;
+}
+
+#rover-link:hover #rover-dropdown {
+    display: block;
+}
+  
+.rover-dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .container {
-    /* display: flex; */
-    /* flex-direction: row; */
     justify-content: center;
     max-width: 70%;
     margin: 40px auto;
     padding: 20px;
-
     background-color: #333;
+    color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
